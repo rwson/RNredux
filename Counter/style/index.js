@@ -1,0 +1,1 @@
+module.exports = require('react-native').StyleSheet.create({"Counter":{"flex":1,"alignItems":"center","justifyContent":"center"},"button":{"width":100,"height":30,"paddingTop":10,"paddingBottom":10,"paddingRight":10,"paddingLeft":10,"marginTop":3,"marginBottom":3,"marginRight":3,"marginLeft":3,"backgroundColor":"lightgray","alignItems":"center","justifyContent":"center"}});
