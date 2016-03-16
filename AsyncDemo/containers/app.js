@@ -1,6 +1,6 @@
 /**
  * app.js
- * build by rwson @3/15/16
+ * build by rwson @3/16/16
  * mail:rw_Song@sina.com
  */
 
@@ -11,18 +11,24 @@ import {Provider} from "react-redux";
 import thunk from "redux-thunk";
 
 import * as reducers from "../reducers";
-import CounterApp from "./CounterApp";
+import AsyncApp from "./AsyncApp";
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 const reducer = combineReducers(reducers);
 const store = createStoreWithMiddleware(reducer);
 
-export default class App extends Component {
+export default class extends Component {
+
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
             <Provider store={store}>
-                <CounterApp />
+                <AsyncApp />
             </Provider>
         );
     }
+
 }

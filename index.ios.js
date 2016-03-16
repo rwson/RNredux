@@ -7,6 +7,7 @@ import React,{
     AppRegistry
 } from "react-native";
 
-import App from "./Counter/containers/app";
+//import App from "./Counter/containers/app";
+import App from "./AsyncDemo/containers/app";
 
 AppRegistry.registerComponent("RNredux", () => App);
